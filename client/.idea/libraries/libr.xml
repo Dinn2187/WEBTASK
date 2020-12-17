@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="libr">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../libr/xmlrpc-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../libr/commons-codec-1.15.jar!/" />
+      <root url="file://$PROJECT_DIR$/../libr" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../libr/commons-codec-1.15-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../libr" recursive="false" />
+  </library>
+</component>
