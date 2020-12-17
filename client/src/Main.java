@@ -1,5 +1,5 @@
 import org.apache.xmlrpc.*;
-
+import org.junit.Assert;
 import java.util.*;
 
 
@@ -12,23 +12,13 @@ public class Main {
             Vector params = new Vector();
 
             int[]intArray = { 1,2,3,4,5 };
-            joinedString = Arrays.toString(intArray);
-            assertEquals("[1, 2, 3, 4, 5]", joinedString);
+            string joinedString = Arrays.toString(intArray);
+            joinedString.assertEquals("[1, 2, 3, 4, 5]", joinedString);
 
-            try
-            {
-                a = Integer.parseInt(args[0]);
-                b = Integer.parseInt(args[1]);
-            }
-            catch(Exception e)
-            {
-                System.out.println("Error"+e);
-            }
-            params.addElement(a);
-            params.addElement(b);
+            params.addElement(joinedString);
+
             Object result = server.execute("sample.sum", params);
-            int sum = ((Integer) result).intValue();
-            System.out.println(a+"\n"+b+"\n"+"The sum is: "+ sum);
+            System.out.println(result);
         }
         catch (Exception exception)
         {

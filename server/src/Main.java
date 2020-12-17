@@ -2,14 +2,13 @@ import org.apache.xmlrpc.*;
 
 public class Main
 {
-    public int sum(int x, int y)
+    public int sum(string arr)
     {
-        return x+y;
+        return "1" + "," + intArray;
+
     }
     public static void main (String [] args)
     {
-
-        String s = "1" + "," + intArray;
         System.out.println(s.length);
 
         try {
